@@ -24,9 +24,9 @@ THE SOFTWARE.
 
 $(function(){
 	var loadedcss = '';
-	$('#time1').val('15:00');
-	$('#time2').val('20:00');
-	$('#time3').val('25:00');
+	$('#time1').val('15');
+	$('#time2').val('20');
+	$('#time3').val('60');
 	$('#info').html("Click to edit this message.");
 	function getHashParams() {
     var hashParams = {};
@@ -156,6 +156,18 @@ $(function(){
 		$('#state').html('PAUSED');
 		changeStateClass('paused');
 	});
+
+
+	$('#fs').click(function(event){
+		if (document.body.requestFullscreen){
+			document.body.requestFullscreen();
+		} else if (document.body.mozRequestFullScreen){
+			document.body.mozRequestFullScreen();
+		} else if (document.body.webkitRequestFullscreen){
+			document.getElementById('time').webkitRequestFullscreen();
+		}
+
+	})
 
 	function resize_display() {
 		var height=$('body').height();
