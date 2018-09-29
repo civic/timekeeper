@@ -27,7 +27,7 @@ $(function(){
 	$('#time1').val('15');
 	$('#time2').val('20');
 	$('#time3').val('60');
-	$('#info').html("Click to edit this message.");
+	$('#info').html("TimeKeeper");
 	function getHashParams() {
     var hashParams = {};
     var e,
