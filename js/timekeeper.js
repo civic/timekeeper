@@ -164,7 +164,7 @@ $(function(){
 		} else if (document.body.mozRequestFullScreen){
 			document.body.mozRequestFullScreen();
 		} else if (document.body.webkitRequestFullscreen){
-			document.getElementById('time').webkitRequestFullscreen();
+			document.body.webkitRequestFullscreen();
 		}
 
 	})
